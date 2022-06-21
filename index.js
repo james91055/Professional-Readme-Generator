@@ -23,27 +23,24 @@ const questions = [
   },
   {
     type: "input",
-    name: "discription",
-    message: "What is the discription of your project?",
-  },
-  {
-    type: "input",
-    name: "contents",
-    message: "What is the contents of your project?",
-  },
-  {
-    type: "input",
-    name: "installation",
-    message: "How to install your application?",
+    name: "description",
+    message: "Briefly describe your project?",
   },
 
   {
     type: "input",
-    name: "Usage",
+    name: "installation",
+    message: "How to install your application?",
+    default: "npm i",
+  },
+
+  {
+    type: "input",
+    name: "usage",
     message: "What does the usage of this project?",
   },
   {
-    type: "input",
+    type: "list",
     name: "license",
     message: "What license does your project have?",
     choices: ["Eclipse", "IBM", "MIT", "Mozilla", "Zlib"],
@@ -57,19 +54,23 @@ const questions = [
     type: "input",
     name: "test",
     message: "How to test your project?",
+    default: "npm test",
   },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  return fs.writeFileSync(path.join(process.cwd(), fileName, data));
+  return fs.writeFileSync("ExampleReadme.md", fileName, data);
 }
 
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then((inquirerAnswer) => {
     console.log("Working on your ReadMe, please wait:)");
-    writeToFile("./dist/README.md", generateMarkdown({ ...inquirerAnswer }));
+    writeToFile(
+      "GenerateReadme/README.md",
+      generateMarkdown({ ...inquirerAnswer })
+    );
   });
 }
 
