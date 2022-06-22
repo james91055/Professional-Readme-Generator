@@ -1,8 +1,8 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license !== null) {
-    return `![![License: ${license}](https://img.shields.io/badge/License-${license}-yellow.svg)]`;
+  if (license !== "None") {
+    return `![License: ${license}](https://img.shields.io/badge/License-${license}-yellow.svg)`;
   } else {
     return ``;
   }
@@ -11,7 +11,7 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license !== null) {
+  if (license !== "None") {
     return `\n* [License] (license)\n`;
   } else {
     return ``;
@@ -21,7 +21,7 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license !== null) {
+  if (license !== "None") {
     return `## License
   
     The content of this site is licensed under the ${license}
@@ -34,8 +34,7 @@ function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
 
-  ## Badges
-
+ 
   ## Description
   
   ${data.description}
@@ -49,35 +48,29 @@ function generateMarkdown(data) {
   - [Tests] (#test)
  
 
-  ## Installation
-
+  ## Installation <a name="installation"></a>
+  \`\`\`
   ${data.installation}
-
-  ## Usage
+  \`\`\`
+  ## Usage <a name="usage"></a>
 
   ${data.usage}
 
-  ## Credit
+  ## Credit <a name="credit"></a>
 
   ${data.contributing}
 
-  ## License
+  ## License <a name="license"></a>
 
   ${data.license}
 
-  
-
-  
 
 
+  ## Tests <a name="test"></a>
 
-  
-
-
-  ## Tests
-
+  \`\`\`
   ${data.test}
-
+  \`\`\`
 
   ## Questions
 
@@ -87,7 +80,7 @@ function generateMarkdown(data) {
   
   
 
-;
+
 `;
 }
 
