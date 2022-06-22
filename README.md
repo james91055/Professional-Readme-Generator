@@ -36,7 +36,7 @@ THEN I am taken to the corresponding section of the README
 
 ## Screenshots
 
-####[Link to video demonstration](https://www.loom.com/share/f0f2461bdf674cb9bc9bdbadcc89f107)
+#### [Link to video demonstration](https://www.loom.com/share/f0f2461bdf674cb9bc9bdbadcc89f107)
 ![Alt text](/img/1.png)
 ![Alt text](/img/2.png)
 ![Alt text](/img/3.png)
