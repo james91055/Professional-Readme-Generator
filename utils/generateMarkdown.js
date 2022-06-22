@@ -41,32 +41,32 @@ function generateMarkdown(data) {
   
   ## Table of Contents 
 
-  - [Installation] (#installation)
-  - [Usage] (#usage)
-  - [Credit] (#credit)
-  - [License] (#license)
-  - [Tests] (#test)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credit](#credit)
+  - [License](#license)
+  - [Tests](#tests)
  
 
-  ## Installation <a name="installation"></a>
+  ## Installation
   \`\`\`
   ${data.installation}
   \`\`\`
-  ## Usage <a name="usage"></a>
+  ## Usage 
 
   ${data.usage}
 
-  ## Credit <a name="credit"></a>
+  ## Credit 
 
   ${data.contributing}
 
-  ## License <a name="license"></a>
+  ## License 
 
   ${data.license}
 
 
 
-  ## Tests <a name="test"></a>
+  ## Tests 
 
   \`\`\`
   ${data.test}
