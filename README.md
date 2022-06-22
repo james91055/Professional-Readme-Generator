@@ -2,9 +2,13 @@
 
 ## Description
 
+This application helps generate Readme doucment after create a new application
+Here is the deploy link
+[Readme Generator](https://james91055.github.io/Professional-Readme-Generator/)
+
 ## User Story
 
-```md
+```
 AS A developer
 I WANT a README generator
 SO THAT I can quickly create a professional README for a new project
@@ -30,9 +34,15 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
 
+## Screenshots
+
+![Alt text](/img/1.png)
+![Alt text](/img/2.png)
+![Alt text](/img/3.png)
+
 ## Links and Credits
 
 - [Node package inquirer](https://www.npmjs.com/package/inquirer)
 - [Professional Readme guid](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
 - [Node.js fs.writeFileSync( )](https://www.geeksforgeeks.org/node-js-fs-writefilesync-method/)
-- [License] (https://gist.github.com/qvil/5e3ed56c26d784e51424621119cc4028)
+- [License](https://gist.github.com/qvil/5e3ed56c26d784e51424621119cc4028?)

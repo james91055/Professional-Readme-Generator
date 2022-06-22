@@ -48,25 +48,25 @@ function generateMarkdown(data) {
   - [Tests](#tests)
  
 
-  ##Installation
+  ## Installation 
   \`\`\`
   ${data.installation}
   \`\`\`
-  ##Usage 
+  ## Usage 
 
   ${data.usage}
 
-  ##Credit 
+  ## Credit 
 
   ${data.contributing}
 
-  ##License 
+  ## License 
 
   ${data.license}
 
 
 
-  ##Tests 
+  ## Tests 
 
   \`\`\`
   ${data.test}
